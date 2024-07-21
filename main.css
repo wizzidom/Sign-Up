@@ -1,0 +1,81 @@
+*{
+    margin:  0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family : Norse;
+    src: url(Norse-Bold.otf) ;
+}
+h1 {
+    font-family: Norse;
+    color: white;
+    font-size: 4rem;
+}
+.main{
+    display: flex;
+}
+
+.logo img{
+    width: 4rem;
+}
+.left-bar{
+    width:35%;
+    height: 100vh;
+    background: url(back.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 30px;
+    position: relative;
+}
+.content{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0,0.5); 
+}
+.right-content{
+    width:65%;
+ 
+    
+}
+.description{
+    margin: 22% 10% 10% 0;
+}
+label{
+    font-size: 12px;
+    display: block;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.form input {
+    padding: 3px;
+    border: 1px solid lightblue;
+    border-radius: 3px;
+    margin: 3px 20px 20px 0;
+    border: 2px solid #000;
+}
+input:invalid{
+    border-color: red;
+}
+.sub{
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(6, 121, 6);
+    color : white;
+    border-radius: 6px;
+    font-weight: bold;
+    margin: 10px 10px 10px 0;
+    
+}
+a{
+    color: rgb(6, 121, 6);
+    text-decoration: none;
+    font-weight: bold;
+}

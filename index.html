@@ -9,6 +9,68 @@
     <script src='main.js'></script>
 </head>
 <body>
-  
+  <div class="main">
+
+    <div class="left-bar">
+        <div class="content">
+            <div class="logo">
+                <img src="odin-lined.png" alt="">
+            </div>
+            <h1>Odin</h1>
+        </div>
+      
+    </div>
+
+    <div class="right-content">
+        <div class="description">
+            <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepesr.
+                Sign up now to get started.
+                <br> <br>
+                You know you want to.
+            </h3>
+        </div>
+        <h3>Lets do this!</h3>
+        <br>
+            <form action="" method="post">
+                <div class="form">
+                <div>
+                    <label for="firstname" >FIRST NAME</label>
+                    <input type="text" name = "firstname" minlength="2" maxlength="20" required>
+
+                    <label for="lastname">LAST NAME</label>
+                <input type="text" name="lastname" minlength="2" maxlength="20" required>
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" minlength="8" maxlength="20" required>
+    
+                </div>
+              
+                <div>
+
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+    
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" name="phone" minlength="10" maxlength="10" required>
+                <label for="passwordConfirmation" >CONFIRM PASSWORD</label>
+                <input type="password" name = "passwordConfirmation" minlength="8" maxlength="20" required>
+                </div>
+                
+             
+            </div>
+               
+               
+            </form>
+            
+          
+       
+        <div class="account">
+            <input type="button" value="Create Account" class="sub">
+            <p class="already">
+                Already have an account? <a href="#">Login</a>
+            </p>
+        </div>
+    </div>
+
+  </div>
 </body>
 </html>
