@@ -51,7 +51,7 @@ label{
 }
 .form{
     display: flex;
-    justify-content: space-between;
+    gap: 20%;
     width: 80%;
 }
 

@@ -6,7 +6,7 @@
     <title>Sign Up</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <script src='main.js' defer></script>
 </head>
 <body>
   <div class="main">
@@ -31,7 +31,7 @@
         </div>
         <h3>Lets do this!</h3>
         <br>
-            <form action="" method="post">
+            <form onsubmit="return check(this)" method="post">
                 <div class="form">
                 <div>
                     <label for="firstname" >FIRST NAME</label>
@@ -40,7 +40,7 @@
                     <label for="lastname">LAST NAME</label>
                 <input type="text" name="lastname" minlength="2" maxlength="20" required>
                 <label for="password">PASSWORD</label>
-                <input type="password" name="password" minlength="8" maxlength="20" required>
+                <input type="password" name="password" minlength="8" maxlength="20" id ="password" required>
     
                 </div>
               
@@ -52,19 +52,18 @@
                 <label for="phone">PHONE NUMBER</label>
                 <input type="tel" name="phone" minlength="10" maxlength="10" required>
                 <label for="passwordConfirmation" >CONFIRM PASSWORD</label>
-                <input type="password" name = "passwordConfirmation" minlength="8" maxlength="20" required>
+                <input type="password" name = "passwordConfirmation" minlength="8" maxlength="20" id="passwordConfirmation" required>
                 </div>
                 
              
             </div>
-               
+            <input type="submit" value="Create Account" class="sub">
                
             </form>
             
           
        
         <div class="account">
-            <input type="button" value="Create Account" class="sub">
             <p class="already">
                 Already have an account? <a href="#">Login</a>
             </p>
