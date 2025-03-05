@@ -9,17 +9,19 @@
             var appUrl = "beetroot://journal?title=US%20Election%20results!&content=margarita%20sundowner";
             var playStoreUrl = "https://play.google.com/store/apps/details?id=com.greatssystems.btmobile";
 
-            // Try opening the app
+            // Try opening the app using the custom scheme
             window.location.href = appUrl;
 
-            // Delay before opening Play Store
+            // If the app is not installed, redirect to Play Store after a delay
             setTimeout(function() {
-                window.location.href = playStoreUrl;
-            }, 2500);
+                window.location.replace(playStoreUrl);
+            }, 2000);  // Delay to allow app to open first
         }
 
-        // Try opening app on page load (only works in some cases)
-        setTimeout(openApp, 500);
+        // Attempt to open the app automatically when the page loads
+        window.onload = function() {
+            setTimeout(openApp, 500);
+        }
     </script>
 </head>
 <body>
