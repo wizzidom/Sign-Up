@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Beetroot App</title>
+    <script>
+        function openApp() {
+            var appLink = "beetroot://journal?title=US%20Election%20results!&content=margarita%20sundowner";
+            var playStoreLink = "https://play.google.com/store/apps/details?id=com.greatssystems.btmobile";
+            
+            // Try opening the app
+            window.location.href = appLink;
+
+            // If app doesn't open, redirect to Play Store after 2 seconds
+            setTimeout(function() {
+                window.location.href = playStoreLink;
+            }, 2000);
+        }
+    </script>
+</head>
+<body onload="openApp()">
+    <h1>Opening Beetroot App...</h1>
+</body>
+</html>
