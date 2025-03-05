@@ -1,31 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open Beetroot App</title>
-    <script>
-        function openApp() {
-            var appUrl = "beetroot://journal?title=US%20Election%20results!&content=margarita%20sundowner";
-            var playStoreUrl = "https://play.google.com/store/apps/details?id=com.greatssystems.btmobile";
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <script>
+    // Try to open the app via the custom URL scheme
+    setTimeout(function () {
+      window.location = "beetroot://openapp";
+    }, 2000); // Try to open the app after 2 seconds
 
-            // Try opening the app using the custom scheme
-            window.location.href = appUrl;
-
-            // If the app is not installed, redirect to Play Store after a delay
-            setTimeout(function() {
-                window.location.replace(playStoreUrl);
-            }, 2000);  // Delay to allow app to open first
-        }
-
-        // Attempt to open the app automatically when the page loads
-        window.onload = function() {
-            setTimeout(openApp, 500);
-        }
-    </script>
+    // Fallback to Play Store if the app isn't installed
+    setTimeout(function () {
+      window.location = "https://play.google.com/store/apps/details?id=com.greatssystems.btmobile";
+    }, 3000); // Redirect after 3 seconds
+  </script>
 </head>
 <body>
-    <h1>Open Beetroot App</h1>
-    <p>If the app doesn’t open, <a href="#" onclick="openApp()">click here</a>.</p>
+  <p>If you're not redirected, <a href="https://play.google.com/store/apps/details?id=com.greatssystems.btmobile">click here</a> to install the app.</p>
 </body>
 </html>
