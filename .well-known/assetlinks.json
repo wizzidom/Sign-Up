@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.beetroot.btmobile",
+    "sha256_cert_fingerprints":
+    ["54:d8:d9:99:dc:4f:e4:2c:b9:65:fb:6c:d1:7d:63:c6:22:56:a2:bd:6b:fd:fc:91:59:c3:19:01:4a:6a:17:3f"]
+  }
+}]
